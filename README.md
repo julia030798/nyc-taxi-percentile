@@ -107,7 +107,7 @@ python yellow_taxi_percentile.py INPUT_FILE [OUTPUT_FILE] [--percentile P]
 python yellow_taxi_percentile.py yellow_tripdata_2025-01.parquet
 
 # Save results to file
-python yellow_taxi_percentile.py yellow_tripdata_2021-01.parquet output.parquet
+python yellow_taxi_percentile.py yellow_tripdata_2025-01.parquet output.parquet
 
 # Custom percentile from URL
 python yellow_taxi_percentile.py https://example.com/data.parquet output.parquet --percentile 0.95
@@ -166,3 +166,4 @@ Key design decisions include:
 - Basic data quality checks (negative distances, missing timestamps)  
 
 Decisions were made with trade-offs in mind, and the implementation is adaptable if requirements change or optimizations become necessary.
+
