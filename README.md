@@ -149,15 +149,6 @@ python yellow_taxi_percentile_test.py
 
 This project is designed to solve the stated problem efficiently while leaving room for future improvements.
 
-Key design decisions include:
-
-- **Polars over pandas** for performance and expressiveness  
-- **Full in-memory loading** for simplicity given current file sizes  
-- **Package structure** separating core logic from CLI for testability and reuse  
-- **Strict `>` comparison** for percentile filtering  
-- **Optional output file** to accommodate both exploratory and batch use cases  
-- **Simple test script** matching problem complexity  
-
 **Future enhancements** could include:
 
 - Flexible column selection to support datasets with slight schema variations  
@@ -166,4 +157,5 @@ Key design decisions include:
 - Basic data quality checks (negative distances, missing timestamps)  
 
 Decisions were made with trade-offs in mind, and the implementation is adaptable if requirements change or optimizations become necessary.
+
 
